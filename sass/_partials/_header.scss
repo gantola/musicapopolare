@@ -1,0 +1,10 @@
+/* @group header */
+.masthead {
+	.l-logo-site, 
+	.l-search {
+		margin-bottom: $gutterwidth;
+	}
+}
+.masthead .navbar {
+	clear: both;
+}

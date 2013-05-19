@@ -1,0 +1,161 @@
+/* @group Modules */
+
+/* =adv */
+.adv {
+	clear: both; margin: 0 0 $gutterwidth;
+	.banner {
+		margin: 0 0 $gutterwidth;
+	}
+}
+.adv-title {
+	@include hide-text;
+}
+
+/* =slider */
+.slider {
+	@include pos;
+	padding: 0;
+	.slider-content {
+		width: 100%;
+		overflow: hidden;
+	}
+}
+.slider-main {
+	clear: both;
+	margin: 0 0 $gutterwidth;
+}
+.rslides_tabs {
+	clear: both;
+	text-align: center;
+	height: 13px;
+	li {
+		margin: 2px;
+	}
+	li, a {
+		@include box-inline;
+	} 
+	a {
+		background: url(img/slider/nav_pager.gif);
+		width: 15px; height: 13px;
+		text-indent: -9999em;
+
+	}
+	.rslides_here a {
+		background-position: 100% 50%;
+	}
+}
+
+/* =mod */
+.mod {
+	margin: 0 0 $gutterwidth;
+}
+.mod-hd {
+	@include group;
+	margin: 0 0 $gutterwidth / 3;
+}
+.mod-title {
+	@include float;
+	padding: 0;
+}
+.mod-bd {
+	clear: both;
+}
+.mod-title i {
+	/*background-color: #000;*/
+	background: url(img/icons/sprites_sections.png) no-repeat 0 0;
+	width: 27px; height: 26px;
+	float: left; display: block;
+	@include group;
+	margin-right: 7px;
+	border-right: 3px solid #fff;
+}
+.mod-video .i-video { background-position: -35px 50%; }
+.mod-events .i-events { background-position: -70px 50%; }
+.mod-notices .i-notices { background-position: -5px 50%; }
+.mod-video,
+.mod-events,
+.mod-notices {
+	.mod-hd {
+		@include height(26);
+	}
+	.mod-title {
+		padding: 0;
+	}
+	.mod-bd {
+		padding: $gutterwidth / 1.5;
+	}
+}
+
+.mod-blogs {
+	.mod-hd {
+		margin: 0;
+		padding: $gutterwidth / 1.5 $gutterwidth / 1.5 0;
+	}
+	.lst-blogs {
+		@include group;
+	}
+	.blog-excerpt {
+		width: 144px;
+		@include float;
+		margin: $gutterwidth / 1.5 $gutterwidth / 1.5 0;
+		padding: 0 0 $gutterwidth / 1.5;
+		border: 1px solid #7d0202;
+		border-width: 0 0 1px;
+	}
+	.author {
+		padding: 0;
+		margin: 0 0 $gutterwidth / 3;
+	}
+	.name {
+		display: block;
+		padding: $gutterwidth / 3;
+		margin: 0;
+	}
+	.post p {
+		padding: 0 $gutterwidth / 3;
+		margin: 0;
+	}
+	.block-link {
+		display: block;
+	}
+	.blog-link span,
+	.lst-title {
+		@include hide-text;
+	}
+}
+
+
+/* @sub module */
+.sub .mod {
+	clear: both;
+}
+
+/* =mod-login */
+
+.mod-login {
+	padding: $gutterwidth / 1.5;
+	.mod-hd,
+	.spacer {
+		@include hide-text;
+	}
+	.act-signin {
+		text-align: center;
+		display: block;
+		padding: $gutterwidth / 3;
+		margin: 0 0 $gutterwidth / 3;
+		@include border-radius();
+	}
+	.usr-name {
+		@include box-inline;
+		clear: left;
+	}
+	.act-usr {
+		text-align: left;
+		display: block;
+		margin: $gutterwidth / 3 0 0;
+		padding: $gutterwidth / 3;
+	}
+}
+.usr-box {
+	p { @include zero; }
+}

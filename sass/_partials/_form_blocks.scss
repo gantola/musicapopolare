@@ -1,0 +1,56 @@
+/* =search-form */
+.search-form,
+.newsletter-form {
+	label {
+		@include visuallyhidden;
+	}
+}
+.search-form {
+	width: auto;
+	background-color: #fff; color: #bababa;
+	padding: $gutterwidth / 5;
+	border: 1px solid #ceccc0;
+	.btn-search {
+		background: transparent url(img/icons/btn_search.png) no-repeat 0 0;
+		width: 17px; height: 17px;
+		overflow: hidden;
+		text-indent: -9999em;
+		@include zero;
+	}
+	.input-text,
+	.input-text:hover,
+	.input-text:focus,
+	.input-text:active {
+		@include box-shadow (0 0 0);
+		border: 0;
+		padding: 0; margin: 0 $gutterwidth 0 0;
+	}
+}
+
+/* =login-form */
+.login-form {
+	margin: 0;
+	.field-label {
+		@include hide-text;
+	}
+	.field-group-psw {
+		@include float;
+		width: 105px;
+
+		@include width-fluid(105,144);
+	}
+	.button-group-login {
+		@include float(right);
+		width: 30px;
+		.btn-login {
+			background: #fff url(img/btn/btn_login.gif) no-repeat 50% 50%;
+			text-indent: -9999em;
+			display: block;
+			width: 100%; height: 30px;
+			@include zero;
+		}
+	}
+}
+
+
+

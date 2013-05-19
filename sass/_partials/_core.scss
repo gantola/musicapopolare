@@ -1,0 +1,76 @@
+html {
+	font-size: 62.5%; // 10
+}
+body {
+	font-size: 100%;
+	line-height: $baselineheight;
+	font-family: $basefontfamily;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+body * {
+	font-size: 1em; /* 12 */
+	line-height: inherit;
+}
+p {
+	margin-top: 0.25em; /*  4px */
+	margin-bottom: 1em; /* 16px */ 
+}
+li {
+	margin-left: 1.5em; /* 24px */
+}
+
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+code {
+}
+pre {
+	 white-space: pre-wrap;       /* css-3 */
+	 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	 white-space: -pre-wrap;      /* Opera 4-6 */
+	 white-space: -o-pre-wrap;    /* Opera 7 */
+	 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+audio,
+object {
+	margin: 0.75em 0; /* 12px */
+}
+th,td {
+	text-align: left;
+	padding: 0.375em; /*  6px */
+}
+
+// img
+
+img {
+max-width : 100%;
+height: auto;
+width: auto;
+border-width : 0;
+vertical-align : middle;
+-ms-interpolation-mode : bicubic; }
+
+.img-rounded {
+@include border-radius; }
+
+.img-polaroid {
+padding : $gutterwidth / 2;
+background-color : #fff;
+border : 1px solid $bordercolor;
+@include drop-shadow(0,1px, 3px, 0.1); }
+
+.img-circle {
+$border-radius: 500px; }
+
+// figure
+
+figure {
+	margin : 0 0 $baselineheight;
+	img {
+		margin : 0;
+	}
+}

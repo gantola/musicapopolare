@@ -1,0 +1,147 @@
+/* @group colours */
+
+body {
+	color: $bodycolor; background: $basefontbackgroundcolor;
+}
+
+
+/*
+
+#702308 - zone 
+#e72022 - band
+#ea4c26 - schools
+#fcb738 - events
+#3c9446 - notices
+#63b8d9 - video
+*/
+/* @group nav */
+.nav-main {
+	.current { color: #fff; }
+	.current span {
+		background-color: #333;
+	}	
+}
+
+.n-zone {
+	a {
+		color: #702308;
+	}
+	.current span {
+		background-color: #702308;
+	}
+}
+.n-band {
+	a {
+		color: #e72022;
+	}
+	.current span {
+		background-color: #e72022;
+	}
+}
+.n-schools {
+	a {
+		color: #ea4c26;
+	}
+	.current span {
+		background-color: #ea4c26;
+	}
+}
+.n-events {
+	a {
+		color: #fcb738;
+	}
+	.current span {
+		background-color: #fcb738;
+	}
+}
+.n-notices {
+	a {
+		color: #3c9446;
+	}
+	.current span {
+		background-color: #3c9446;
+	}
+}
+.n-video {
+	a {
+		color: #63b8d9;
+	}
+	.current span {
+		background-color: #63b8d9;
+	}
+}
+
+/* @group module */
+.tg--video {
+	.mod-hd {
+		background-color: #85b8dd; color: #fff;
+	}
+	.mod-bd {
+		background: #e3ecf3; /* 20% */
+	}
+}
+.tg--events {
+	.mod-hd {
+		background-color: #f8ba00; color: #fff;
+	}
+	.mod-bd {
+		background: #faecc6; /* 20% */
+	}
+}
+.tg--notices {
+	.mod-hd {
+		background-color: #369537; color: #fff;
+	}
+	.mod-bd {
+		background: #d3e5d1; /* 20% */
+	}
+}
+
+/* =mod-blogs */
+.mod-blogs {
+	background-color: #ad0000; color: #fff;
+	a {
+		color: #fff;
+	}
+}
+.blog-excerpt .author {
+	background-color: #7d0202
+}
+.l-nav--video {
+	background-color: #1764b0; color: #fff;
+	a { color: #fff; }
+	.mod-title { color: #e9e9e9; }
+	.nav li {
+		background-color: #3389c7;
+		li {
+			background-color: #85b8dd;
+		}
+	}	
+}
+
+/* =mod-login */
+.mod-login {
+	background-color: #999; color: #fff;
+	a {
+		color: #fff;
+	}
+	.act-signin {
+		color: #5a8481;
+		background-color: #fff;
+	}
+	.act-usr {
+		background: #fff url(img/icons/usr_link.gif) no-repeat 98% 50%;
+		color: #666;
+	}
+}
+
+/* @group form */
+.btn {
+	background-color: #333; color: #fff;
+	&:hover {
+		color: #fff;
+		background-color: #000;
+		*background-color: #000;
+	}
+}
+

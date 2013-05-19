@@ -1,0 +1,127 @@
+@import "_partials/_config.scss";
+@import "_partials/_mixins.scss";
+
+
+@media all and (max-width: 994px) {
+	.logo-site {
+		background: url(img/loghi/logo_site_small.png) no-repeat 0 0;
+		width: 137px; height: 102px;
+		display: block;
+		margin: $gutterwidth / 1.5;
+		span img {
+			text-indent: -9999em;
+			left: -9999em;
+			position: absolute;
+			border: 1px solid #f00
+		}
+	}
+}
+@media all and (min-width: 30em) {
+	/* @group structure */
+	.l-grid {
+		width: 100%; float: left;
+	}
+	.main {
+		width: 796px;
+		margin-left: $gutterwidth / 1.5;
+
+		@include float();
+		
+		@include width-fluid(796,994);
+		margin-left: $gutterwidth / 1.5;
+		@include margin-fluid(10,796,left); /* 10 */
+
+		.primary {
+			width: 608px;
+			@include float(right);
+
+			@include width-fluid(608,796);
+		}
+		.secondary {
+			width: 164px;
+			@include float(left);
+
+			@include width-fluid(164,796);
+		}
+	}
+	.sub {
+		width: 164px;
+		@include float(right);
+
+		@include width-fluid(164,994);
+	}
+
+	/* @group header */
+	
+	.l-logo-site {
+		@include float;
+	}
+	.nav-block-lang,
+	.l-add-social,
+	.l-search {
+		@include float(right);
+		clear: right;
+	}
+	
+	/* @group nav */
+	
+	.nav-block-skip {
+		left: -9999em; position: absolute;
+	}
+	.nav-main {
+		width: 100%;
+		@include float;
+		@include vertical(#e4e4e4 ,#f6f6f6);
+		border: 1px solid #ceccc6;
+		border-width: 1px 0;
+		border-color: #ceccc6 #d2cfc4 #d2cfc4;
+		li {
+			@include pos;
+			background-image: url(img/navigation/bdr_nav_main.gif);
+			background-position: 100% 50%;
+			background-repeat: no-repeat;
+		}
+		li, a {
+			@include float;	
+		}
+		ul {
+			float: left;
+			left: -9999em;
+			display: block;
+			@include pos(absolute,10000);
+			width: 176px;
+			li, a {
+				float: none;
+				display: block;
+			}
+		}
+		li:hover > ul {
+			top: 100%; left: 0;
+		}
+	}
+}
+
+.js nav[role=navigation],
+.js .l-search {
+	overflow: hidden;
+	max-height: 0;
+}
+.js .rolled-down,
+.js .rolled-down nav[role=navigation] {
+	max-height: none;
+	overflow: visible;
+}
+@media screen and (min-width: 48.25em) {
+	.controls-site-nav {
+		clear: none;
+	}
+	a.search-link,
+	a.menu-link {
+	   display: none;
+	}
+	.js nav[role=navigation],
+	.js .l-search {
+	    max-height: none;
+	    overflow: visible;
+	}
+}

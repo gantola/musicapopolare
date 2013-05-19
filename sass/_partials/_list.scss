@@ -1,0 +1,55 @@
+/* @group list */
+
+.lst {
+ 	list-style-type: none;
+ 	padding: 0;
+ 	li {
+ 		display: block;
+ 		margin-left: 0;
+ 		padding: 0;   
+ 	}
+}
+.lst-add-social {
+	overflow: hidden;
+	li {
+		margin-left: $gutterwidth / 3;
+	}
+	li, a {
+		@include float;
+		width: 30px; height: 30px;
+	}
+	a {
+		background: url(img/icons/sprites_social.png);
+		@include hide-text;
+	}
+	.facebook { background-position: -3px 50%; }
+	.twitter { background-position: -37px 50%; }
+	.youtube { background-position: -74px 50%; }
+	.linkdein { background-position: -108px 50%; }
+	.pinterest { background-position: -142px 50%; }
+}
+
+/* =lst-lead */
+.mod-video,
+.mod-events,
+.mod-notices {
+	.lst-lead {
+		width: 100%;
+		overflow: hidden;
+	}
+	.lead {
+		width: 130px;
+		@include float; 
+		margin-left: $gutterwidth;
+	}
+}
+.lst-lead {
+	.title,
+	.meta p {
+		margin: 0;
+		padding: 0;
+	}
+	.photo {
+		margin: 0 0 $gutterwidth / 3;
+	}
+}

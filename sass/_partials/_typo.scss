@@ -1,0 +1,111 @@
+/* @group typografy */
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+}
+h1, h2 {
+	font-size: 2.4em; // 24
+	padding: 0.25em 0// 6
+}
+h3, h4, h5,
+ul, ol, p, dl,
+.action-group a {
+	font-size: 1.2em; // 12
+	padding: 0.5em 0; // 6 
+}
+li *,
+dd *,
+dd,
+dt {
+	font-size: 1em; // 12
+}
+.field-label label {
+	font-size: 1.2em; // 12
+}
+
+.nav-main a,
+.mod-title,
+.nav-title,
+.nav-categories a,
+.nav-categories strong,
+.blog-excerpt .author,
+.mod-login .act-signin {
+	font-family: $otherfontfamily;
+}
+.nav-categories ul a {
+	font-family: $basefontfamily;
+}
+
+/**/
+.blog-excerpt .author {
+	@include font-size(16);
+	@include uppercase;
+}
+
+/* @group nav */
+.nav-main {
+	a {
+		@include font-size(27);
+		@include uppercase;
+	}
+	ul a {
+		@include font-size(16);
+		text-transform: none;
+	}
+}
+
+.nav-categories {
+	a, strong {
+		@include font-size(19);
+		line-height: 1.1;
+		/*@include uppercase;*/
+		font-weight: 400;
+	}
+	ul a {
+		@include font-size(13);
+		line-height: 1.5;
+		text-transform: none;
+	}
+}
+
+.nav-footer a {
+	@include font-size(14);
+}
+
+.controls-site-nav a {
+	@include font-size(14);
+	@include uppercase;
+}
+
+/* @group module */
+
+.mod-title,
+.nav-title {
+	@include font-size(21);
+	@include uppercase;
+	line-height: 26px;
+}
+
+/* @group list */
+.lst {
+	.title {
+		@include font-size(12);
+		font-weight: 600;
+	}
+}
+.mod-login {
+	.actionbar {
+		text-align: center;
+	}
+	a {
+		@include font-size(11);
+	}
+	.act-signin {
+		@include font-size(18);
+		@include uppercase;
+	}
+	.act-usr {
+		@include font-size(11);
+		font-weight: 600;
+	}
+}

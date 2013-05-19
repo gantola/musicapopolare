@@ -1,0 +1,141 @@
+@media all and (max-width: 994px) {
+  /* line 6, ../sass/layout.scss */
+  .logo-site {
+    background: url(img/loghi/logo_site_small.png) no-repeat 0 0;
+    width: 137px;
+    height: 102px;
+    display: block;
+    margin: 10px; }
+    /* line 11, ../sass/layout.scss */
+    .logo-site span img {
+      text-indent: -9999em;
+      left: -9999em;
+      position: absolute;
+      border: 1px solid red; } }
+@media all and (min-width: 30em) {
+  /* @group structure */
+  /* line 21, ../sass/layout.scss */
+  .l-grid {
+    width: 100%;
+    float: left; }
+
+  /* line 24, ../sass/layout.scss */
+  .main {
+    width: 796px;
+    margin-left: 10px;
+    float: left;
+    display: inline;
+    width: 80.08%;
+    margin-left: 10px;
+    margin-left: 1.256%;
+    /* 10 */ }
+    /* line 34, ../sass/layout.scss */
+    .main .primary {
+      width: 608px;
+      float: right;
+      display: inline;
+      width: 76.382%; }
+    /* line 40, ../sass/layout.scss */
+    .main .secondary {
+      width: 164px;
+      float: left;
+      display: inline;
+      width: 20.603%; }
+
+  /* line 47, ../sass/layout.scss */
+  .sub {
+    width: 164px;
+    float: right;
+    display: inline;
+    width: 16.499%; }
+
+  /* @group header */
+  /* line 56, ../sass/layout.scss */
+  .l-logo-site {
+    float: left;
+    display: inline; }
+
+  /* line 61, ../sass/layout.scss */
+  .nav-block-lang,
+  .l-add-social,
+  .l-search {
+    float: right;
+    display: inline;
+    clear: right; }
+
+  /* @group nav */
+  /* line 68, ../sass/layout.scss */
+  .nav-block-skip {
+    left: -9999em;
+    position: absolute; }
+
+  /* line 71, ../sass/layout.scss */
+  .nav-main {
+    width: 100%;
+    float: left;
+    display: inline;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#f6f6f6));
+    background-image: -webkit-linear-gradient(top, #e4e4e4, #f6f6f6);
+    background-color: #f6f6f6;
+    background-image: -moz-linear-gradient(top, #e4e4e4, #f6f6f6);
+    background-image: -ms-linear-gradient(top, #e4e4e4, #f6f6f6);
+    background-image: -o-linear-gradient(top, #e4e4e4, #f6f6f6);
+    background-image: linear-gradient(top, #e4e4e4, #f6f6f6);
+    background-repeat: repeat-x;
+    border: 1px solid #ceccc6;
+    border-width: 1px 0;
+    border-color: #ceccc6 #d2cfc4 #d2cfc4; }
+    /* line 78, ../sass/layout.scss */
+    .nav-main li {
+      position: relative;
+      z-index: 1;
+      background-image: url(img/navigation/bdr_nav_main.gif);
+      background-position: 100% 50%;
+      background-repeat: no-repeat; }
+    /* line 84, ../sass/layout.scss */
+    .nav-main li, .nav-main a {
+      float: left;
+      display: inline; }
+    /* line 87, ../sass/layout.scss */
+    .nav-main ul {
+      float: left;
+      left: -9999em;
+      display: block;
+      position: absolute;
+      z-index: 10000;
+      width: 176px; }
+      /* line 93, ../sass/layout.scss */
+      .nav-main ul li, .nav-main ul a {
+        float: none;
+        display: block; }
+    /* line 98, ../sass/layout.scss */
+    .nav-main li:hover > ul {
+      top: 100%;
+      left: 0; } }
+/* line 105, ../sass/layout.scss */
+.js nav[role=navigation],
+.js .l-search {
+  overflow: hidden;
+  max-height: 0; }
+
+/* line 110, ../sass/layout.scss */
+.js .rolled-down,
+.js .rolled-down nav[role=navigation] {
+  max-height: none;
+  overflow: visible; }
+
+@media screen and (min-width: 48.25em) {
+  /* line 115, ../sass/layout.scss */
+  .controls-site-nav {
+    clear: none; }
+
+  /* line 119, ../sass/layout.scss */
+  a.search-link,
+  a.menu-link {
+    display: none; }
+
+  /* line 123, ../sass/layout.scss */
+  .js nav[role=navigation],
+  .js .l-search {
+    max-height: none;
+    overflow: visible; } }

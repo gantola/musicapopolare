@@ -1,0 +1,51 @@
+<!-- modulo login quando utente non è loggato -->
+<div class="mod mod-login">
+	<header class="mod-hd">
+		<h1 class="mod-title">Login</h1>
+	</header><!-- /mod-hd -->
+	<div class="mod-bd">
+		<div class="form-block login-form">
+			<form action="#" method="post">
+				<fieldset>
+					<div class="field-group">
+						<div class="field-label"><label for="f-usr">username</label></div><!-- /field-label -->
+						<div class="field-content"><input type="text" name="username" value="" id="f-usr" /></div><!-- /field-content -->
+					</div><!-- /field-group -->
+					<div class="field-group field-group-psw">
+						<div class="field-label"><label for="f-psw">password</label></div>
+						<div class="field-content"><input type="password" name="password" id="f-psw" value="" /></div>
+					</div><!-- /field-group -->
+					<div class="button-group button-group-login">
+						<button type="submit" class="btn btn-login">entra</button />
+					</div><!-- /button-group -->
+				</fieldset>
+			</form>
+		</div><!-- /login-form -->
+		<div class="actionbar">
+			<div class="action-group">
+				<a href="registrazione.asp" class="action action-btn act-signin">Registrati</a><span class="spacer"> | </span>
+				<a href="recupara_psw.asp">Dimenticata la password?</a>
+			</div><!-- /action-group -->
+		</div><!-- /actionbar -->
+	</div><!-- /mod-bd -->
+</div><!-- /mod-login -->
+
+<!-- questo blocco è per mostrare cosa succede all'interno del "mod-login" quando l'utente si fa riconoscere dal sistema -->
+<div class="mod mod-login">
+	<header class="mod-hd">
+		<h1 class="mod-title">Login</h1>
+	</header><!-- /mod-hd -->
+	<div class="mod-bd">
+		<div class="usrbar">
+		<div class="usr-box">
+	 	  <p>Benvenuto: <strong class="usr-name">Nome Cognome</strong>, <a href="#">log out &#187;</a>
+	 	  </p>
+	 	  <div class="actionbar">
+			<div class="action-group">
+				<a href="account.asp" class="action act-usr">Gestisci utente</a>
+			</div><!-- /action-group -->
+			</div><!-- /actionbar -->
+	 	</div><!-- /usr-box -->
+	</div><!-- /usrbar -->
+	</div><!-- /mod-bd -->
+</div><!-- /mod-login -->

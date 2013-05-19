@@ -1,0 +1,38 @@
+/* @group links */
+
+a,
+a:visited {
+	color: $linkcolor;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: $linkcolorhover;
+	text-decoration: underline;
+}
+a:active {
+	color: $linkcoloractive;
+	text-decoration: none;
+}
+
+.mod-login {
+	a {
+		text-decoration: underline;
+	}
+	.act-signin,
+	.act-usr {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.nav-main {
+	a {
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+		}
+	}
+}	

@@ -1,0 +1,32 @@
+$basefontsize: 12;
+$baselineheight: 1.5; // suggerita da wcag 2.0
+
+$basefontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$altfontfamily: Georgia, "Times new roman", serif;
+$otherfontfamily: "Economica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$maxwidth: 994px;
+$gutterwidth: 15px;
+
+// You can choose a special typeface just for ampersands too
+$ampfontfamily: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua');
+
+//  And if your site’s for geeks, you’ll need a font for code too
+$codefont: Monaco, Courier New, monospace;
+
+$bodycolor: #333;
+$textcolor: #333;
+$basefontbackgroundcolor: #faf9f8;
+
+$primarycolor: #333333;
+
+$linkcolor: $primarycolor;
+$linkcolorhover: darken($linkcolor, 10);
+$linkcolorvisited: darken($linkcolorhover, 10);
+$linkcolorfocus: darken($linkcolorvisited, 10);
+$linkcoloractive: $linkcolorhover;
+
+$bordercolor: #cfccc6;
+$borderstyle: solid;
+$borderwidth: 1px;
+$borderradius: 5px;
